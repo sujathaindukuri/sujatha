@@ -1,0 +1,14 @@
+
+label{
+    text-align: right;
+}
+input {
+    text-align: right;
+}
+ form {
+     margin: 0 auto;
+     width: 50;
+ }
+ h1 {
+     text-shadow:2px 2px 2px rgb(0, 128, 90);
+ }
