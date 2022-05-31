@@ -4,11 +4,17 @@ label{
 }
 input {
     text-align: right;
+
+}
+input:focus {
+    background-color: aqua;
+
 }
  form {
      margin: 0 auto;
-     width: 50;
+     width:100px;
+     
  }
  h1 {
      text-shadow:2px 2px 2px rgb(0, 128, 90);
- }
+ }<

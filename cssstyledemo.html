@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>cssstyles</title>
+    
+    <style>
+            body { background-color:aquamarine;
+                   background-image: url(butterfly.png);
+                   background-repeat: repeat-x;
+                   background-attachment:scroll;
+                   background-position:bottom;
+
+                 }
+
+          div  p {  
+                   color:red;
+                 }
+          div > p {
+                   background-color:blue;     
+                   } 
+          div + p {
+                     text-decoration:underline;
+                   } 
+          div, p {
+                    font-size:20pt;
+                }   
+          * {
+                  text-align:center;                      
+              }
+          h1{
+              text-shadow:5px 5px 5px rgb(243, 37, 71);
+              
+            } 
+            div ~ p {
+                     color:blueviolet;
+                   }    
+            .transform {
+                          text-transform: capitalize;
+                       }
+            h2.transform {
+                color:rgb(25, 0, 255);
+                font-size:xx-large;
+                
+            }
+            
+            #uppercase{
+                     text-transform:uppercase;
+                      }
+            
+            .keyboard {
+                font-size:xx-small;
+            }   
+            #viewport {
+                font-size: 6vw;
+            }
+           #borderdemo {
+               border-style: double dotted dashed outset;
+               border-color:brown red yellow rgb(109, 47, 255);
+               border-width:3px 2px 5px 4px;
+               padding:20px 23px;
+               margin:50px 50px 40px 50px;
+           }
+           #rgba {
+               color:rgba(20,20,60,00.55);
+           }
+           #hex {
+               color:#ffaabb;
+           }
+           #hexshort {
+               color:#fff;
+
+           }
+           #hsla {
+               color:hsla(240, 100, 10, 0.9);
+           }
+           li {
+              list-style: none;
+          }
+
+          li::before {
+              content:"\01F600"; 
+
+          }
+                                       
+    </style>
+</head>
+    <body>
+         <header><H1>CSS STYLES</H1></header>
+        <div>
+            
+            <p class="transform" > This is paragraph one </p>
+            <p class="transform" >This is paragraph two</p>
+            <p>This is paragraph three</p>
+            <span><p>This is paragraph four</p></span>
+            <p id="uppercase">This is paragraph five</p>
+
+        </div>
+        <p> This is paragraph six</p>
+        <p> This is paragraph seven</p>
+        <p id="borderdemo">adding border</p>
+        <ul>
+             <li id="rgba">RGBA color</li>
+             <li id="hex">Hex color</li>
+             <li id="hexshort">Hex short color</li>
+             <li id="hsla">HSLA COLOR</li>
+         </ul>
+        <h2 class="transform"> This is heading</h2>
+         <p class="keyboard">demo on keyboard font</p>
+         <p id="viewport">demo on view port</p>
+        
+        
+    </body>
+</html>

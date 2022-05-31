@@ -1,0 +1,136 @@
+<html>
+    <head>
+        <title>flexdemo</title>
+        <style>
+          .parent {
+                    display:flex;
+                    background-color:white;
+            
+                    align-items: center;
+                    flex-direction:column;
+                  }
+                
+           #green {
+                           background-color: rgb(133, 238, 130); 
+                           padding:20px;
+                           
+                           height:10px;
+                           width:660px;
+          }      
+          #orange {
+                           background-color: rgb(231, 128, 31); 
+                           padding:20px;
+                           
+                           height:10px;
+                           width:470px;
+                           
+          }      
+          #blue {
+                           background-color: rgb(78, 42, 241); 
+                           padding:20px;
+                        
+                           margin-top: 20px;
+                           margin-left: 10px;
+                           
+                           height:176px;
+                           width:120px;
+                           flex-wrap: wrap;
+                           
+          }    
+          #blue1 {
+                           background-color: rgb(78, 42, 241); 
+                           height:50px;
+                           width:160px;
+                           margin-left: 30px;
+                           
+                           
+          }        
+          #yellow {
+                           display:flex;
+                           background-color: rgb(186, 230, 29); 
+                           padding:20px;
+                           margin-top:20px;
+                           margin-right: 10px;
+                           margin-bottom: 20px;
+                           flex-wrap: wrap;
+                           width:200px;
+                           align-content:center;
+                           
+                           
+                           
+                           
+          }    
+          p{
+              position:absolute;
+              top: 125px;
+          }
+          #second{
+              display:flex;
+          }
+          #yellow>div{
+              background-color: azure;
+              flex-direction:row;
+              padding:10px;
+              margin:20px;
+              width:40px;
+              
+              
+
+          }  
+          #pink {
+                           display:flex;
+                           background-color: rgb(209, 140, 169); 
+                           
+                           padding:20px;
+                           flex-wrap: wrap;
+                           width:200px;
+                           margin:20px;
+                           
+                           
+          }    
+          #pink>div{
+              background-color: azure;
+              flex-direction:row;
+              padding:10px;
+              margin:20px;
+              width:40px;
+              
+
+          }  
+          #third{
+              display:flex;
+
+          }
+        </style>
+    </head>
+    <body align="center">
+        <h1>Flex Demo</h1>
+        <div class="parent">
+            <div id="green">
+            Green
+             </div><div id="second">
+             <div id="yellow">
+                 <p>yellow</p>
+                 <div>1</div>
+                 <div>2</div>
+                 <div>3</div>
+                 <div>4</div>
+             </div>
+             <div id="pink">
+                <p>pink</p>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+            </div>
+            <div id="blue">blue</div>
+            </div>
+            <div id="third">
+            <div id="orange">
+                orange
+                 </div>
+                 <div id="blue1"></div>
+            </div>
+        </div>
+    </body>
+</html>

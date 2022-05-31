@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>flex demo</title>
+        <style>
+         .container {
+             display:flex;
+             background-color:white;
+             padding:20px;
+             margin:20px;
+             justify-content: center;
+             flex-wrap: wrap;
+             flex-direction:column;
+             
+            
+         }
+         .container > div {
+             
+             padding:20px;
+             
+         }
+         #first{
+             background-color:green;
+         }
+         #blue{
+             background-color:blue;
+            
+            
+             margin:20px;
+             height:250px;
+             width:200px;
+            
+         }
+         #second{
+             display:flex;
+             background-color:white;
+             flex-wrap:wrap;
+             flex-direction:row;
+         }
+         #second>div{
+             
+            
+         }
+         #yellow{
+             display:flex;
+             background-color: yellow;
+           padding:20px;
+             margin:20px;
+             height:250px;
+             width:200px;
+            flex-wrap:wrap;
+             flex-direction:row;
+             align-content: center;
+         }
+         #yellow>div{
+             background-color:white;
+            padding:20px;
+             margin:20px;
+             height:10px;
+             width:10px;
+             flex-wrap:wrap;
+             
+             
+             
+         }
+         #pink{
+            
+            display:flex;
+             background-color: pink;
+            padding:20px;
+             margin:20px;
+             height:250px;
+             width:200px;
+            flex-wrap:wrap;
+             flex-direction:row;
+             align-content: center;
+         }
+         #pink>div{
+             background-color:white;
+            padding:20px;
+             margin:20px;
+             justify-content: center;
+             flex-wrap: wrap;
+         }
+         #orange{
+             background-color:orange;
+             width:200px;
+             height:200px;
+         }
+         #blue1{
+             background-color:blue;
+             width:200px;
+             height:200px;
+         }
+         #third{display:flex;
+             flex-direction:row;
+             flex-wrap: wrap;
+         }
+         p{
+             position:absolute;
+
+         }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="first" >green</div>
+            <div id="second">
+                <div id="yellow"><p>yellow</p>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            </div>
+            <div id="pink"><p>pink</p>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                </div>
+            
+            <div id="blue">blue</div>
+            </div>
+            <div id="third">
+                <div id="orange">
+                    orange
+                     </div>
+                     <div id="blue1"></div>
+                </div>
+            
+        </div>
+    </body>
+</html>

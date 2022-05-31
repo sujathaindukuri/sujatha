@@ -3,6 +3,7 @@
         <title>
            Expensedetails
         </title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">​
         <style>
             
             table {
@@ -24,16 +25,51 @@
             body{
                 text-align:center;
             }
+            div>p {
+                font: italic normal bold x-small monospace,Courier;
+            }
+            div ~ p{
+                font-style:oblique;
+                font-variant:small-caps;
+                font-weight:bolder;
+                font-size:x-large;
+                font-family:'Courier New', Courier, monospace;
+            }
             p:nth-child(odd){
                 background-color:blue;
+            }
+            p::before
+            {
+               content:"\01F600"; 
+            }
+            #viewport
+            {
+              font-size:10vw;  
+            }
+            a{
+                text-decoration:none;
+                color:red;
+                font-size: 250%;
+            }
+            a:visited
+            {
+                color:purple;
+            }
+            a:hover
+            {
+                color:aqua;
+            }
+            #sophiafont {
+                font-family: "Sofia", sans-serif;​
             }
             
         </style>
     </head>
-    <body style="background-color:pink;">
+    <body style="background-color:pink;" >
         <header>
-            <h1><u>Expense details</u></h1>
+            <h1 id="sophiafont" class="font-effect-fire" ><u>Expense details</u></h1>
         </header>
+
         <table align="center" border>
             <tr>
                 <th></th>
@@ -112,7 +148,7 @@
             </tr>
             <tr>
                 <th>June</th>
-                <<td>2000</td>
+                <td>2000</td>
                 <td>220</td>
                 <td>500</td>
                 <td>150</td>
@@ -189,21 +225,25 @@
                 <td>40</td>
             </tr>
         </table>
+        <div>
         <p>
             This is first line
         </p>
         <p>
             This is second line
         </p>
-        <p>
+        <span><p id="viewport">
             This is third line
-        </p>
+            
+        </p></span>
+        </div>
         <p>
             This is fourth line
         </p>
         <p>
             This is fifth line
         </p>
-
+        <a  href="cssstyledemo.html">cssdemo</a><br>
+        <a href="sample.html">sample</a>
     </body>
 </html>

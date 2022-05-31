@@ -1,26 +1,132 @@
 <html>
-    <body><table>
-    <form action="expensedetails.html">
+    <head>
+        <title>sample</title>
+   <style>
+       .container{
+        background-color: white;
+        display:grid;
+        gap:10px;
+        grid-template-rows:70px 170px 100px 50px ;
+        grid-template-columns: 440px;
+        grid-template-areas: 'one'
+        'subcon'
+        'five'
+        'six';
+        border-style: solid;
+        border-color: green;
+        padding:10px;
+        width:450px;
+       }
+       .subcon{
+        display:grid;
         
+        grid-template-columns:220px 220px ;
+        grid-template-areas: 'grp1 grp2' 
+        ;
+
+
+        background-color: white;
+        
+        
+        width:440px;
+        grid-area:subcon;
+        padding:10px;
+        
+    }
+    .grp1{
+grid-area: grp1;
+    }
+    .grp2{
+grid-area: grp2;
+    }
+    .grp2{
+        display:grid;
+      
+        grid-template-columns: 200px;
+        grid-template-rows:60px 60px;
+        grid-template-areas: 'three' 
+        'four';
+        border-color: green;
+        border-style: solid;
+        padding:10px;
+        background-color: white;
+        gap:10px
+    }
+    .grp2>div{
+        background-color: orange;
+        
+    }
+    .container .one{
+        background-color: orange;
+        
+    }
+    .container .five{
+        background-color: orange;
+        
+    }
+    .container .six{
+        background-color: orange;
+        
+    }
+    .three{
+        grid-area: three;
+    }
+    .four{
+        grid-area: four;
+    }
+    .five{
+        grid-area: five;
+    }
+    .six{
+        grid-area: six;
+    }
+    .one{
+        grid-area:one;
+    }
+    .grp1{
+        display:grid;
+
+              grid-template-columns: 200px;
+        grid-template-rows:60px 60px;
+        grid-template-areas: 'two' 
+        'two';
+width:220px;
+        border-color: green;
+        border-style: solid;
+        background-color: white;
+        gap:10px; 
+        padding:10px;
+        
+    }
+    .grp1>div{
+        background-color: orange;
+        
+    }
+    .two{
+        grid-area: two;
+    }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="one"></div>
+      <div class="subcon">
+        <div class="grp1">
+            <div class="two"></div>
+        </div>
             
-                <tr>
-            <!--creating date inputtype-->
-            <td>
-            <label for="date">Date:</label>
-            </td>
-            <td>
-            <input type="date" id="date" name="date" min="1960-01-01" max="2050-01-01"><br><br>
-               </td> 
-            </tr>
-            <tr>
-                <!--creating date inputtype-->
-                <td>
-                <label for="date">amount :</label>
-                </td>
-                <td>
-                <input type="text" id="date" name="date" ><br><br>
-                   </td> 
-                </tr>
-            </form>
-            </table>
-            </body></html>
+<br>
+            <div class="grp2">
+                
+                <div class="three"></div>
+                <div class="four"></div>
+               
+           </div>     
+            </div>
+            <div class="five"></div>
+            <div class="six"></div>
+            </div>
+            </body>
+                
+        </html>

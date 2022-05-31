@@ -1,0 +1,457 @@
+<html>
+    <head>
+        <title>flex</title>
+        <style>
+            .container{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                
+                gap:2px
+            
+               
+            
+            }
+            .subcon1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row ;
+                gap:2px;
+                
+                
+            }
+            .subcon2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row ;
+                gap:2px;
+                
+            }
+            .grp1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column ;
+                gap:2px;
+                
+            }
+            .grp2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row ;
+                gap:2px;
+            }
+            .grp3{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:2px;
+            }
+            .grp4{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row ;
+                gap:2px;
+            }
+           .one,.seven{
+               background-color: purple;
+               padding:20px;
+              
+
+           }
+           .grp2, .grp4{
+            background-color:blue;
+            
+               
+           }
+           .four, .eight{
+            background-color:green;
+            padding:20px;
+            
+           }
+           .two, .three, .five, .six {
+padding: 20px;
+           }
+           .container1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                gap:5px;
+                border-style:solid ;
+                border-width: 5px;
+                padding:20px;
+                width: 340px;
+
+            }
+            .con1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+                
+                
+            }
+            .con2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column ;
+                gap:5px;
+                
+            }
+            .c1, .c2,.c3,.c4,.c5{
+                background-color: green;
+                padding:50px;
+
+
+            }
+            .container2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                
+                gap:2px
+            
+               
+            
+            }
+            
+            .b1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+                gap:2px
+            
+               
+            
+            }
+            
+            .b2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+                gap:2px
+            
+               
+            
+            }
+            .b1c1, .b1c3, .b2c2, .b2c3
+            {
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                
+                gap:2px  
+            }
+            .b1c2, .b2c1 
+            {
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+                
+            }
+            .b1c11, .b1c12,.b1c21,.b1c22,.b1c31,.b1c32, .b2c11,.b2c12, .b2c21,.b2c22,.b2c31,.b2c32{
+                background-color: black;
+                padding:50px;
+
+
+            }
+            .container3{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+                gap:5px;
+                
+                padding:20px;
+                width:1500px;
+
+            }
+            .p3{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                
+
+            }
+            .p32{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                border-style: solid;
+            }
+            .p322{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+               
+                
+            }
+            .p3222{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding-left:5px;
+            }
+            .p321, .p3221,.p32221,.p32222,.p323,.p324{
+                background-color: green;
+                padding:40px;
+
+
+            }
+            .p2{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                
+
+            }
+            .p22{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                border-style: solid;
+            }
+            .p222{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+                
+            
+               
+                
+            }
+            
+                
+                
+               
+                
+            
+            .p2222{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+                
+             padding-left:5px;
+                
+            }
+            .p221, .p2221,.p22221,.p22222,.p223,.p224 {
+                background-color: orange;
+                padding:50px;
+
+
+            }
+
+
+            
+            .p1{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                
+
+            }
+            .p12{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding:20px;
+                border-style: solid;
+            }
+            .p122{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:row;
+               
+               
+                
+            }
+            .p1222{
+                background-color: white;
+                display:flex;
+                flex-wrap: wrap;
+                flex-direction:column;
+                gap:5px;
+               
+                padding-left:5px;
+            }
+            .p121, .p1221,.p12221,.p12222,.p123,.p124{
+                background-color: green;
+                padding:50px;
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container3">
+            <div class="p1">
+                <div class="p11">template</div>
+                <div class="p12">
+                    <div class="p121"></div>
+                    <div class="p122">
+                        <div class="p1221"></div>
+                        <div class="p1222">
+                            <div class="p12221"></div>
+                            <div class="p12222"></div>
+                        </div>
+                    </div>
+                    <div class="p123"></div>
+                    <div class="p124"></div>
+                </div>
+            </div>
+
+            
+            <div class="p2">
+                 <div class="p21">flexbox</div>
+                <div class="p22">
+                    <div class="p221"></div>
+                    <div class="p222">
+                        <div class="p2221"></div>
+                        <div class="p2222">
+                            <div class="p22221"></div>
+                            <div class="p22222"></div>
+                        </div>
+                    </div>
+                    <div class="p223"></div>
+                    <div class="p224"></div>
+                </div>
+                </div>
+            
+            <div class="p3">
+                <div class="p31">grid</div>
+                <div class="p32">
+                    <div class="p321">HEADER</div>
+                    <div class="p322">
+                        <div class="p3221">ARTICLE</div>
+                        <div class="p3222">
+                            <div class="p32221">TEXT1</div>
+                            <div class="p32222">TEXT2</div>
+                        </div>
+                    </div>
+                    <div class="p323">MAIN</div>
+                    <div class="p324">FOOTER</div>
+                </div>
+            </div>
+        </div>
+        <BR>
+<div class="container">
+        <div class="subcon1">
+            <div class="one">1</div>
+            <div class="grp1">
+                <div class="grp2">
+                   <div class="two" >2</div>
+                   <div class="three">3</div>
+                </div>
+                <div class="four">4 </div>
+            </div>
+        </div>
+        <div class="subcon2">
+            
+            <div class="grp3">
+                <div class="grp4">
+                   <div class="five" >5</div>
+                   <div class="six">6</div>
+                </div>
+                <div class="eight">8</div>
+            </div>
+            <div class="seven">7 </div>
+        </div>
+        
+        </div>
+        <br><br>
+        <div class="container1">
+            <div class="con1">
+<div class="c1">1</div>
+<div class="c4">4</div>
+            </div>
+<div class="c2">2</div>
+<div class="con2">
+<div class="c3">3</div>
+<div class="c5">5</div>
+</div>
+
+        </div>
+        <br><br>
+        <div class="container2">
+            <div class="b1">
+<div class="b1c1">
+<div class="b1c11"></div>
+<div class="b1c12"></div>
+</div>
+<div class="b1c2">
+    <div class="b1c21"></div>
+<div class="b1c22"></div>
+</div>
+<div class="b1c3">
+    <div class="b1c31"></div>
+    <div class="b1c32"></div>
+</div>
+
+            </div>
+            <div class="b2">
+                <div class="b2c1">
+                    <div class="b2c11"></div>
+                    <div class="b2c12"></div>
+                    </div>
+                    <div class="b2c2">
+                        <div class="b2c21"></div>
+                    <div class="b2c22"></div>
+                    </div>
+                    <div class="b2c3">
+                        <div class="b2c31"></div>
+                        <div class="b2c32"></div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

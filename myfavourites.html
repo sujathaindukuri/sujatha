@@ -6,9 +6,23 @@
              text-decoration:none; 
              color:red;
           }
+          a:visited {
+             color:blueviolet 
+          }
+          a:hover{
+              color:aquamarine;
+          }
           h1 {
               color:red;
               text-shadow: 2px 2px  blue;
+          }
+          li {
+              list-style: none;
+          }
+
+          li::before {
+              content:"\01F600"; 
+
           }
 
         </style>
@@ -17,10 +31,11 @@
         <header align="center"><h1><b><u>Here are the list of my favourite pets(unorderedlist)</u> </b></h1></header>
         <br>
         <ul>
-            <li type="square"><a href="dogs.html"  >Dogs</a>   </li><br>                
+            <li type="square"><a href="dogs.html" >Dogs</a>   </li><br>                
             <li type="square"><a href="cats.html" >Cats</a></li><br>
             <li type="square"><a href="fish.html" >Fish</a></li><br>
             <li type="square"><a href="rabbits.html">Rabbits</a></li><br>
+            <li type="square"><a href="cssstyledemo.html">css</a></li><br>
 
         </ul>
         <a href="#trailer">go to trailer</a><br>

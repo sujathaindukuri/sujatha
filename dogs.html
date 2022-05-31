@@ -1,10 +1,56 @@
 <html>
     <head>
         <title>dogs</title>
+        <style>
+            #div1{
+                display:block;
+                background-color: white;
+                  height:20px;
+                  width:20px;  
+                  position:absolute
+                  top: 10px;
+                
+
+            }
+            #div3{
+                display: inline block;
+                background-color: white;
+                height:20px;
+                width:20px;  
+                position:relative;
+                top: 10px;
+                               
+            }
+            #div2{
+                display: inline block;
+                background-color: white;
+                height:20px;
+                width:20px;  
+                position:relative;
+                bottom:20px;
+                left:40px;
+                               
+            }
+            #div4{
+                display: inline block;
+                background-color: white;
+                height:20px;
+                width:20px;  
+                position:relative;
+                left:40px;
+                bottom:10px;
+               
+                               
+            }
+            #white{
+                height:10px;
+                background-color: white;
+            }
+        </style>
     </head>
-    <body style="background-color:rgb(233, 206, 223);">
+    <body style="background-color:white">
         <header><h2><center><i><b>Types of dogs and their prices(table)</b></i></center></h2></header>
-        <table border>
+        <table >
             <tr>
                  <th>SNO</th>
                  <th>NAME</th>
@@ -33,6 +79,33 @@
                 <td>800</td>
                 <td>1500</td>
             </tr>
+        </table><br>
+        <table  align ="center" cellspacing="10px" height="300" width="300">
+            <tr style="background-color:green;"><td colspan="3" >green</td></tr>
+            
+            <tr>
+                
+            <td style="background-color:yellow;"><p>yellow</p>
+                <div id="div1">1</div>
+                <div id="div2">2</div>
+                <div id="div3">3</div>
+                <div id="div4">4</div>
+            </td>
+                <td style="background-color:pink;"><p>pink</p>
+                    <div id="div1">1</div>
+                <div id="div2">2</div>
+                <div id="div3">3</div>
+                <div id="div4">4</div></td>
+                <td rowspan="2" style="background-color:blue">blue</td>
+            </tr>
+            <tr>
+                <td colspan=2" style="background-color:orange ;">
+                 orange
+                </td>
+                
+            </tr>
+            
+
         </table>
     </body>
 </html>

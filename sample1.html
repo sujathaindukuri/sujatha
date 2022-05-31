@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>
+            grid demo
+        </title>
+        <style>
+            .container{
+                display:grid;
+                grid-template-areas:'head head head head head'
+                                   
+
+                'menu main main main right'
+                'menu footer footer footer footer';
+                background-color: blue;
+                gap:10px;
+                padding:10px;
+
+
+            }
+            .container>div{
+                background-color: blanchedalmond;
+                padding:20px;
+                text-align:center;
+            }
+            .item1{
+                grid-area: head;
+            }
+            .item2{
+                grid-area: menu;
+            }
+            .item3{
+                grid-area: main;
+            }
+            .item4{
+                grid-area: right;
+            }
+            .item5{
+                grid-area: footer;
+            }
+            .one{
+                grid-area: one;
+            }
+            .two{
+                grid-area: two;
+            }
+            .three{
+                grid-area: three;
+            }
+            .four{
+                grid-area: four;
+            }
+            .five{
+                grid-area: five;
+            }
+            .six{
+                grid-area: six;
+            }
+
+            .first2{
+                
+                grid-template-areas: 'one one'
+                
+                'two three'
+                'two four'
+                'five five'
+                'five five'
+                'six six'
+                ;
+                
+                display:grid;
+                background-color: white;
+                gap:5px;
+                padding:20px;
+                border-style:solid ;
+                border-width: 5px;
+                border-color: green;
+                                
+                
+            }
+            .two, .three, .four{
+                border-style:solid ;
+                border-width: 5px;
+                border-color: green;
+            }
+            
+            
+             .first2>div{
+                background-color:orange;
+                padding:40px;
+                gap:20px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <h2>GRID DEMO</h2>
+        <div class="container">
+            <div class="item1">head</div>
+            <div class="item2">menu</div>
+            <div class="item3">main</div>
+            <div class="item4">right</div>
+            <div class="item5">footer</div>
+        </div>
+<br>
+        <div class="first2">
+            <div class="one"></div>
+           
+            <div class="two"></div>
+        
+            <div class="three"></div>
+            <div class="four"></div>
+          
+           
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+    </body>
+</html>

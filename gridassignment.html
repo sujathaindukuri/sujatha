@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <title>GridAssignment</title>
+        <style>
+            .title{
+                display:grid;
+                grid-template-columns: 370px 370px 370px;
+                grid-template-areas: 't1 t2 t3';
+                font-size: x-large;
+            }
+           .first{
+                display:grid;
+                grid-template-columns: 350px 350px 350px;
+                
+                grid-template-areas: 'first1 first2 first3';
+                gap:10px;
+                padding:10px;
+            }
+            .first1{
+                
+                grid-template-areas: 'one one'
+                'two three'
+                'two four'
+                'five five'
+                'six six';
+                
+                display:grid;
+                grid-template-columns: 150px 150px;
+                grid-template-rows: 100px 100px 100px 200px 80px;
+                background-color: white;
+                gap:5px;
+                padding:20px;
+                border-style:solid ;
+                border-width: 5px;
+
+                                
+                
+            }
+           .first1>div{
+                background-color:navy;
+                padding:40px;
+                gap:20px;
+            }
+            .first2{
+                
+                grid-template-areas: 'one one'
+                'two three'
+                'two four'
+                'five five'
+                'six six'
+                ;
+                grid-template-columns: 150px 150px;
+                grid-template-rows: 100px 100px 100px 200px 80px;
+                display:grid;
+                background-color: white;
+                gap:5px;
+                padding:20px;
+                border-style:solid ;
+                border-width: 5px;
+                border-color: green;
+                                
+                
+            }
+             .first2>div{
+                background-color:orange;
+                padding:40px;
+                gap:20px;
+            }
+             .first3{
+                
+                grid-template-areas: 'one one'
+                'two three'
+                'two four'
+                'five five'
+                'six six';
+                grid-template-columns: 150px 150px;
+                grid-template-rows: 100px 100px 100px 200px 80px;
+                display:grid;
+                background-color: white;
+                gap:5px;
+                padding:20px;
+                border-style:solid ;
+                border-width: 5px;
+                border-color:brown;
+                                
+                
+            }
+            .first3>div{
+                background-color:rgb(130, 49, 206);
+                padding:40px;
+                gap:20px;
+            }
+            .second{
+                
+                grid-template-areas: 'one two three'
+                'four two three'
+                'four two five';
+                display:grid;
+                background-color: white;
+                gap:20px;
+                padding:20px;
+                border-style:solid ;
+                border-width: 10px;
+                                
+                
+            }
+            
+            .second>div{
+                background-color:green;
+                padding:20px;
+                gap:20px;
+            }
+            
+            .third{
+                
+                grid-template-areas: 'one two three'
+                'one four four'
+                'five six seven'
+                'eight eight seven';
+                display:grid;
+                background-color: white;
+                gap:2px;
+                padding:30px;
+               
+                
+                   
+                
+            }
+            .third .one,.third .seven{
+                background-color: rgb(214, 95, 214);
+            }
+            .third .two,.third .three,.third .five,.third .six {
+                background-color:rgb(96, 96, 223);
+            }
+            .third>div{
+                background-color:rgb(90, 197, 90);
+                padding:40px;
+                gap:20px;
+            }
+            .fourth{
+                
+                grid-template-areas: 'one two two three'
+                'four two two five'
+                'six six seven eight'
+                'six six nine ten';
+                display:grid;
+                background-color: white;
+                gap:20px;
+                padding:30px;
+               
+                             
+                
+            }
+            .fourth>div{
+                background-color:black;
+                padding:40px;
+                gap:20px;
+            }
+            .t1{
+                grid-area: t1;
+            }
+            .t2{
+                grid-area: t2;
+            }
+            .t3{
+                grid-area: t3;
+            }
+            .one{
+                grid-area: one;
+            }
+            .two{
+                grid-area: two;
+            }
+            .three{
+                grid-area: three;
+            }
+            .four{
+                grid-area: four;
+            }
+            .five{
+                grid-area: five;
+            }
+            .six{
+                grid-area: six;
+            }
+            .seven{
+                grid-area: seven;
+            }
+            .eight{
+                grid-area: eight;
+            }
+            .nine{
+                grid-area: nine;
+            }
+            .ten{
+                grid-area: ten;
+            }
+           .first .first1{
+                grid-area: first1;
+            }
+            .first .first2{
+                grid-area: first2;
+            }
+           .first .first3{
+                grid-area: first3;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div class="title">
+            <div class="t1">Template</div>
+            <div class="t2">Flex</div>
+            <div class="t3">Grid</div>
+        </div>
+        
+        <div class="first">
+            
+        <div class="first1">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+        <br><br>
+        
+       
+        
+
+        <div class="first2">
+            <div class="one"></div>
+           
+            <div class="two"></div>
+         
+            <div class="three"></div>
+            <div class="four"></div>
+           
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+        
+        <div class="first3">
+            <div class="one">HEADER</div>
+            <div class="two">ARTICLE</div>
+            <div class="three">TEXT1</div>
+            <div class="four">TEXT2</div>
+            <div class="five">MAIN</div>
+            <div class="six">FOOTER</div>
+        </div>
+        </div>
+        <br>
+        <br><br>
+        <br>
+        
+        <div class="second">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="third">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">7</div>
+            <div class="eight">8</div>
+        </div>
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="fourth">
+            <div class="one">1</div>
+            <div class="two">2</div>
+            <div class="three">3</div>
+            <div class="four">4</div>
+            <div class="five">5</div>
+            <div class="six">6</div>
+            <div class="seven">7</div>
+            <div class="eight">8</div>
+            <div class="nine">9</div>
+            <div class="ten">10</div>
+
+        </div>
+
+    </body>
+</html>
