@@ -1,0 +1,12 @@
+body{
+    background-color : rgb(187, 187, 240);
+    align-items: center;
+    
+}
+tr{ height:50px;
+}
+
+button{
+    background-color: brown;
+     align-items:center;
+}

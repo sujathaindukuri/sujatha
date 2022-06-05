@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Form validation</title>
+        
+            <link rel='stylesheet' type='text/css' href='formstyle.css'>
+        
+    </head>
+    <body >
+
+         <br>
+         <br>
+        <form method="post" name="form1" action="computesal.html">
+            <fieldset>
+                <legend>Employee Details</legend>
+                <table>
+                 <tr>
+                   <td><label for="name">Name:</label></td>
+                   <td><input type="text" id="name" name="name" ></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="empid">Emp ID:</label></td>
+                    <td><input type="text" id="empid" name="empid" ></td>
+                 </tr>
+                 <tr>
+                    <td><label for="joindate">Joining Date:</label></td>
+                    <td><input type="date" id="joindate" name="joindate" ></td>
+                 </tr>
+                 <tr>
+                    <td><label for="workhours">Hours Worked:</label></td>
+                    <td><input type="number" id="workhours" name="workhours" ></td>
+                 </tr>
+                 <tr>
+                    <td><label for="designation">Designation:</label></td>
+                    <td><select id="designation" name="designation">
+                        <option>manager</option>
+                        <option>trainee</option>
+                        <option>consultant</option>
+                        </select>
+                    </td>
+                 </tr>
+                 <tr>
+                     <td><button value="submit" onclick="return validate()&&salary()">submit</button></td>
+                 </tr>
+                </table>
+            </fieldset>
+        </form>
+        <script src="validate.js">
+           
+        </script>
+    </body>
+</html>
