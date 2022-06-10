@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Form validation</title>
+        
+            
+        
+    </head>
+    <body >
+
+         <br>
+         <br>
+        
+            
+               
+                <table>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                 <tr>
+                   <td><label for="name">Guess my lucky number:</label></td>
+                  
+                    <td><input type="number" id="luckynum" name="luckynum" ></td>
+                 </tr>
+                 <tr>
+                    <td><br></td>
+                </tr>
+                 <tr>
+                     <td></td>
+                     <td><button type="submit" style="background-color: blue;" onclick="checkluckynum()">check</button></td>
+                 </tr>
+                 <tr>
+                    <td><br></td>
+                </tr>
+                </table>
+            
+        <span id="result"></span>
+        <script>
+          var count = 0;
+          function checkluckynum(){
+              var lnum = document.getElementById("luckynum").value;
+              if(lnum==2)
+              {  count++;
+                alert(count);
+                 document.getElementById('result').innerHTML="great you guesed in" + count + "attempts";
+                 count=0;
+              }
+              else{
+                  document.getElementById('result').innerHTML="try again";
+                  count++;
+
+              }
+
+          }
+  
+
+    
+
+           
+        </script>
+    </body>
+</html>

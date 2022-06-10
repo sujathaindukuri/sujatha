@@ -66,3 +66,48 @@ window.localStorage.setItem('empsal',sal);
 
 
 }
+
+function checkluckynum()
+{
+    var lnum = document.form1.luckynum.value;
+    
+    switch(lnum){
+        
+        
+    case "1":
+        {
+            var stat="sucess";
+            
+            window.localStorage.setItem('status',stat);
+            
+        break;
+        }
+    case "2", "3", "4", "5", "6", "7", "8", "9", "10":
+        {   
+            var stat="failure";
+            window.localStorage.setItem('status',stat);
+       
+        
+         break;   
+        }
+        
+       
+    }
+
+return true;
+}
+    function  displaystatus(){
+      
+
+     var status1=window.localStorage.getItem('status');
+     alert(status1);
+    if (status1=="sucess")
+    {
+        document.getElementById("lno").innerHTML="sucess";
+           
+    }
+    else{
+        document.getElementById("lno").innerHTML="Not really give it another try";
+    }
+    return true;
+}
