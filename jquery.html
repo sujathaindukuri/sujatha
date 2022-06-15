@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js">
+
+        </script>
+    </head>
+    <body>
+        
+        <button onclick="getData()" id="but1">click</button>
+        <span id="displayid"></span>
+        <span id="displayname"></span>
+        <div id="display"></div>
+        <script>
+            
+            function getData(){
+                alert("hello");
+                $.ajax({
+                    url:'https://gorest.co.in/public/v2/users',
+                    dataType:'json',
+                    type:'GET',
+                    data:{
+                        key:'value'
+                    },
+                    success:(data)=>{
+                        let arr = [];
+                        arr=data;
+                        for(part in arr){
+                        //console.log(data[part].id);
+                        //console.log(data[part].name);
+                       
+                        document.getElementById("display").innerHTML=data[part].id+ " " +data[part].name;
+                    }
+                    },
+                    error:(err)=>{
+                        console.log(err)
+                    }
+                })
+            }
+
+        </script>
+    </body>
+</html>
+
