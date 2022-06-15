@@ -5,7 +5,10 @@
     </head>
     <body>
     <button onclick="getData()" id="but1">click</button><br><br>
-        <div id="display"></div>
+       <!-- <div id="display"></div>-->
+        <ul id="display">
+            
+        </ul>
         <script>
             let newarr;
             function getData(){
@@ -17,20 +20,21 @@
                         key:'value'
                     },
                     success:(data)=>{
-                        newarr =data.map(subarr);
-                        function subarr(subdata)
-                        {
-                           return(subdata.id+" , "+subdata.name+"<br>");
-                        }
-                        document.getElementById("display").innerHTML=newarr;
-                                         
+                        //newarr =data.map(subarr);
+                       // function subarr(subdata)
+                       // {
+                       //    return(subdata.id+" : "+subdata.name+"<br>");
+                       // }
+                       // document.getElementById("display").innerHTML=newarr;
+                          data.map((subdata)=> {  $("#display").append(`<li>${subdata.id}: ${subdata.name}</li>`);  } );          
                     },
                     error:(err)=>{
                         console.log(err)
                     }
-                })
+                });
             }
         
         </script>
+
     </body>
 </html>
