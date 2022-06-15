@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js">
+
+        </script>
+    </head>
+    <body>
+        
+        <button onclick="getData()" id="but1">click</button><br><br>
+        <div id="display"></div>
+        
+
+        <script>
+            let newarr;
+            
+            function getData(){
+                
+                $.ajax({
+                    url:'https://gorest.co.in/public/v2/users',
+                    dataType:'json',
+                    type:'GET',
+                    data:{
+                        key:'value'
+                    },
+                    success:(data)=>{
+                        newarr =data.map(subarr);
+                        function subarr(subdata)
+                        {
+                           
+                            return(subdata.id+" , "+subdata.name+"<br>");
+                        }
+                        
+                       // var quizArray = newarr.split('~');
+                        
+                        //var finalString = quizArray.join('<br>');
+                        document.getElementById("display").innerHTML=newarr;
+                        
+                    
+                       
+
+                    
+                    },
+                    error:(err)=>{
+                        console.log(err)
+                    }
+                })
+            }
+        
+        </script>
+    </body>
+</html>
